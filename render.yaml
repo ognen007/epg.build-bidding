@@ -8,3 +8,4 @@ services:
       - handle: static
         src: /index.html
         fallback: true
+        
