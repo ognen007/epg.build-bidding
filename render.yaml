@@ -1,0 +1,10 @@
+services:
+  - type: static
+    name: your-app-name
+    env: static
+    buildCommand: npm run build
+    publishDirectory: /dist
+    routes:
+      - handle: static
+        src: /index.html
+        fallback: true
